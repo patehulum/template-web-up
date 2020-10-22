@@ -11,6 +11,46 @@ ul{
 a{
 	text-decoration:none;
 }
+
+
+
+  li {
+	  color: #fff;
+	  position: relative;
+	  text-decoration: none;
+	transition-duration: 0.5s;
+  }
+	
+  li a {
+	color: #fff;
+  }
+  
+  li:hover {
+	  cursor: pointer;
+  }
+  
+  ul li ul {
+	background:#f7f7f7;
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+	transition: all 0.5s ease;
+	margin-top: 1rem;
+	display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li ul:hover {
+	visibility: visible;
+	opacity: 1;
+	display: block;
+  }
+  
+  ul li ul li {
+	clear: both;
+	width: 100%;
+  }
+
 #main{
 	padding:30px 50px;
 	position:relative;
@@ -99,11 +139,11 @@ nav{
 	transition: all ease 0.5s;
 }
 .black-line {
-  	align-self: end;
-  	width: 50%;
- 	height: 15%;
-  	margin-bottom: 4em;
-  	position: absolute;
+	align-self: end;
+	width: 50%;
+	height: 15%;
+	margin-bottom: 4em;
+	position: absolute;
 	bottom:0px;
 	left: -3%;
 	border-right: 1px solid  rgba(41,41,41,0.30);
@@ -116,9 +156,9 @@ nav{
 	height: 0;
 	border-style: solid;
 	border-width: 11px 11px 0 11px;
- 	border-color:  #292929 transparent transparent transparent;
-  	right: -.7em;
-  	bottom: -2px;
+	border-color:  #292929 transparent transparent transparent;
+	right: -.7em;
+	bottom: -2px;
 }
 .social{
 	position: absolute;
@@ -190,99 +230,99 @@ nav{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+	display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+	right: 0;
+	border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover, .next:hover {	
+	background-color: rgba(0,0,0,0.8);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
 }
 
 /* The dots/bullets/indicators */
 .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+	background-color: #717171;
 }
 
 /* Fading animation */
 .fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+	from {opacity: .4}
+	to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+	from {opacity: .4}
+	to {opacity: 1}
 }
 
 #services{
-		width:100%;
+	width:100%;
 	height:100vh;
 	box-sizing: border-box;
 	font-family: calibri;
@@ -295,14 +335,14 @@ nav{
 }
 
 .s-heading h1{
-	color:#FFFFFF;
+	color:#292929;
 	font-size: 3rem;
 	margin: 0px;
 	padding: 0px;
 	
 }
 .s-heading p{
-	color:rgba(255,255,255,0.30);
+	color:#292929;
 	font-size: 1rem;
 	margin: 0px;
 	padding: 0px;
@@ -769,21 +809,21 @@ width: 100%;
 		width:100%;
 		border: none;
 	}
-	.f-name,.f-email{
+	.f-name,.f-email,.f-subjek{
 		width: 100%;
 
 	}
-	.f-name input,.f-email input{
+	.f-name input,.f-email input,.f-subjek input{
 		width:100%;
 		border: none;
-		background-color: #262626 !important;
+		background-color: #ffff !important;
 		padding: 10px;
 		box-sizing: border-box;
 		height: 40px;
 		
 	}
 	textarea{
-		background-color: #262626 !important;
+		background-color: #ffff !important;
 		margin: 10px 0px;
 		padding: 10px;
 		height: 200px !important;
